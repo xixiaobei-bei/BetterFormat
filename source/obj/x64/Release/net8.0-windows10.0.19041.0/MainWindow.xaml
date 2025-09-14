@@ -1,0 +1,56 @@
+﻿<Window
+    x:Class="BetterFormat.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='2' x:Name="MainGrid" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="目标分区:" VerticalAlignment="Center" Margin="0,0,10,0"/>
+        <ComboBox x:ConnectionId='3' x:Name="TargetPartitionComboBox" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="目标分区信息:" VerticalAlignment="Top" Margin="0,10,10,0"/>
+        <TextBlock x:ConnectionId='4' x:Name="PartitionInfoTextBlock" Grid.Row="1" Grid.Column="1" Text="大小: 100 GB, 文件系统: NTFS" VerticalAlignment="Top" Margin="0,10,0,0" TextWrapping="Wrap"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="文件系统:" VerticalAlignment="Center" Margin="0,10,10,0"/>
+        <ComboBox x:ConnectionId='5' x:Name="FileSystemComboBox" Grid.Row="2" Grid.Column="1" Margin="0,10,0,0">
+            <ComboBoxItem Content="NTFS"/>
+            <ComboBoxItem Content="FAT32"/>
+            <ComboBoxItem Content="exFAT"/>
+        </ComboBox>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="分配单元大小:" VerticalAlignment="Center" Margin="0,10,10,0"/>
+        <ComboBox x:ConnectionId='6' x:Name="AllocationUnitComboBox" Grid.Row="3" Grid.Column="1" Margin="0,10,0,0">
+            <ComboBoxItem Content="默认值"/>
+            <ComboBoxItem Content="4096"/>
+            <ComboBoxItem Content="8192"/>
+        </ComboBox>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="卷标:" VerticalAlignment="Center" Margin="0,10,10,0"/>
+        <TextBox x:ConnectionId='7' x:Name="VolumeLabelTextBox" Grid.Row="4" Grid.Column="1" Margin="0,10,0,0"/>
+
+        <CheckBox x:ConnectionId='8' x:Name="QuickFormatCheckBox" Grid.Row="5" Grid.Column="1" Content="快速格式化" IsChecked="True" Margin="0,10,0,0"/>
+
+        <StackPanel Grid.Row="7" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button x:ConnectionId='9' x:Name="OkButton" Content="确认" Margin="0,0,10,0"/>
+            <Button x:ConnectionId='10' x:Name="CancelButton" Content="取消"/>
+        </StackPanel>
+    </Grid>
+</Window>
+

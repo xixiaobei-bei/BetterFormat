@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "uBnQ3dYQt+8=",
+  "success": true,
+  "projectFilePath": "Z:\\Project\\BetterFormat\\BetterFormat\\BetterFormat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240428000\\microsoft.windowsappsdk.1.5.240428000.nupkg.sha512",
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\8.0.20\\microsoft.netcore.app.runtime.win-x64.8.0.20.nupkg.sha512",
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\8.0.20\\microsoft.windowsdesktop.app.runtime.win-x64.8.0.20.nupkg.sha512",
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\8.0.20\\microsoft.aspnetcore.app.runtime.win-x64.8.0.20.nupkg.sha512",
+    "C:\\Users\\xixiao_bei\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
