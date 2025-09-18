@@ -13,3 +13,4 @@ The formatting GUI for Windows right-click partitions was a temporary solution, 
 
 Note: I'm still a middle school student. If you find any bugs, you can submit an issue—I’ll check them on weekends—or email me at: jiaxi120516@outlook.com
 
+I will continue to update this project and add new features.
