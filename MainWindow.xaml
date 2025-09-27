@@ -1,0 +1,40 @@
+
+<Window
+    x:Class="BetterFormat.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d">
+    <Grid>
+        <controls:NavigationView x:Name="MainNavView"
+            IsPaneOpen="True"
+            IsPaneToggleButtonVisible="False"
+            PaneDisplayMode="Left"
+            IsSettingsVisible="False"
+            SelectionFollowsFocus="Enabled"
+            OpenPaneLength="160"
+            CompactPaneLength="48"
+            IsBackButtonVisible="Collapsed">
+            <controls:NavigationView.MenuItems>
+                <controls:NavigationViewItem Content="分区" Tag="Partition">
+                    <controls:NavigationViewItem.Icon>
+                        <BitmapIcon UriSource="ms-appx:///res/edit.png" ShowAsMonochrome="False"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="格式化" Tag="Format">
+                    <controls:NavigationViewItem.Icon>
+                        <BitmapIcon UriSource="ms-appx:///res/erase.png" ShowAsMonochrome="False"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+                <controls:NavigationViewItem Content="关于" Tag="About" x:Name="AboutMenuItem">
+                    <controls:NavigationViewItem.Icon>
+                        <BitmapIcon UriSource="ms-appx:///res/about.png" ShowAsMonochrome="False"/>
+                    </controls:NavigationViewItem.Icon>
+                </controls:NavigationViewItem>
+            </controls:NavigationView.MenuItems>
+            <Frame x:Name="ContentFrame"/>
+        </controls:NavigationView>
+    </Grid>
+</Window>
